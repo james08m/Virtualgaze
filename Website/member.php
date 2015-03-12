@@ -38,11 +38,11 @@
     <div class="container-fluid">
         <div class="row-fluid">
             <ul class=" well nav nav-lists col-sm-2" style="border-radius: 0px; padding: none;">
-                <li class="nav-header"><span class="glyphicon glyphicon-th"></span> Ordinateurs</li>
+                <li class="nav-header"><span class="glyphicon glyphicon-th"></span> Ordinateurs <span class="badge">3</span></li>
 
                 <!-- Ordinateur -->
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-th-list"></span> Ordinateur 1<span class="caret"></span></a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-th-list"></span> Ordinateur 1 <span class="badge">3</span><span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> User1</a></li>
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> User2</a></li>
@@ -52,7 +52,7 @@
 
                 <!-- Ordinateur -->
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-th-list"></span> Ordinateur 2<span class="caret"></span></a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-th-list"></span> Ordinateur 2 <span class="badge">3</span><span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> User1</a></li>
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> User2</a></li>
@@ -62,7 +62,7 @@
 
                 <!-- Ordinateur -->
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-th-list"></span> Ordinateur 3<span class="caret"></span></a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-th-list"></span> Ordinateur 3 <span class="badge">3</span><span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> User1</a></li>
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> User2</a></li>
