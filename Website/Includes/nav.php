@@ -7,7 +7,7 @@
  */
 
 ?>
-<nav class="navbar navbar-inverse" style="border-radius: 0px">
+<nav class="navbar navbar-inverse" style="border-radius: 0px; margin-bottom: 0px;">
     <div class="container-fluid">
 
         <!-- Nav bar title -->
