@@ -9,15 +9,15 @@
 require("database.php");
 
 // Check if every user has sent every POST var
-if( isset($_POST['email']) AND isset($_POST['password']) AND isset($_POST['name']) AND isset($_POST['lastname']) )
+if( isset($_POST['email']) AND isset($_POST['password']) AND isset($_POST['firstname']) AND isset($_POST['lastname']) )
 {
     global $DB;
-    $req = $DB->prepare('INSERT into Account(Email, Password, FirstName, LastName) VALUES(:Email, :Password, :FirstName, :LastName)');
+    $req = $DB->prepare('INSERT into members(email, password, firstname, lastname) VALUES(?, ?, ?, ?)');
     $req->execute(array(
-        'Email' => htmlspecialchars($_POST['Email']),
-        'Password' => sha1(htmlspecialchars($_POST['Password'])), // sha1 is a haching function
-        'FirstName' => htmlspecialchars($_POST['FirstName']),
-        'LastName' => htmlspecialchars($_POST['LastName'])
+        htmlspecialchars($_POST['email']),
+        sha1(htmlspecialchars($_POST['password'])),
+        htmlspecialchars($_POST['firstname']),
+        htmlspecialchars($_POST['lastname'])
     ));
 
     header('Location: ../connexion.php?code=insc');

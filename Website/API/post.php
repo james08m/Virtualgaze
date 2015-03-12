@@ -9,10 +9,16 @@
 include('Models/api.php');
 
 // If all datas are in the request
-if(isset($_POST['member_id']) and isset($_POST['key']) and   isset($_POST['computer']) and  isset($_POST['username']) and  isset($_POST['data']) )
+if(isset($_POST['com_key']) and   isset($_POST['computer']) and  isset($_POST['username']) and  isset($_POST['datas']) )
 {
     // Add computer and user if it need to
-    UpdateComputerInfo($_POST['computer'], $_POST['username'], $_POST['member_id']);
+    UpdateComputerInfo($_POST['computer'], $_POST['username'], $_POST['com_key']);
+
+    // Get computer id
+    $computer_id = GetComputerIdByName($_POST['computer']);
+
+    // Add informations to logs
+    AddLog($_POST['com_key'],$computer_id, GetUserIdByName($computer_id,$_POST['username']), $_POST['datas']);
 }
 else // Missing datas
 {

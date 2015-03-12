@@ -6,9 +6,10 @@
  * Time: 1:21 AM
  */
 
-$DB_DIRECTION = "mysql:host=mysql.hostinger.fr;dbname=u172367994_db";
-$DB_USER = "u172367994_user";
-$DB_PASS = "franfran10";
+$DB_DIRECTION = "mysql:host=localhost;dbname=virtualgaze";
+$DB_USER = "root";
+$DB_PASS = "";
+$PDO_OPTIONS[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
 /*
 $DB_DIRECTION = "mysql:host=104.236.51.98;dbname=WorkTrade";
 $DB_USER = "client";
