@@ -17,7 +17,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Virtualgaze</a>
+            <a class="navbar-brand" href="index.php">Virtualgaze</a>
         </div>
 
         <!-- Navbar  main menu -->
@@ -32,7 +32,7 @@
                 else // If no user connected
                 {?>
                     <!-- Menu element 1-->
-                    <li class="active"><a href="#">Accueil</a></li>
+                    <li><a href="index.php">Accueil</a></li>
                     <!-- Dropdown menu element 2 -->
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
@@ -56,14 +56,14 @@
                 <?php // If user connected
                     if(isset($_SESSION['id']))
                     {?>
-                        <li><a href="#"><span class="glyphicon glyphicon-cog"></span> <?php echo $_SESSION['username']?></a></li>
-                        <li><a href="deconnexion.php"><span class="glyphicon glyphicon-log-out"></span> Déconnexion</a></li>
+                        <li><a href="member.php"><span class="glyphicon glyphicon-cog"></span> <?php echo $_SESSION['firstname'] . " " . $_SESSION['lastname']?></a></li>
+                        <li><a href="Models/deconnexion.php"><span class="glyphicon glyphicon-log-out"></span> Déconnexion</a></li>
                     <?php
                     }
                     else // If no user connected
                     {?>
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Incription</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Connexion</a></li>
+                        <li><a href="inscription.php"><span class="glyphicon glyphicon-user"></span> Incription</a></li>
+                        <li><a href="connexion.php"><span class="glyphicon glyphicon-log-in"></span> Connexion</a></li>
                     <?php
                     }
                 ?>

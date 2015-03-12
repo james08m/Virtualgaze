@@ -30,14 +30,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
-
-
 <body>
     <?php include 'Includes/nav.php'; ?>
 
     <div class="container-fluid">
         <div class="row-fluid">
-            <ul class=" well nav nav-lists col-sm-2" style="border-radius: 0px; padding: none;">
+            <ul class=" well nav nav-lists col-sm-2" style="border-radius: 0px;">
                 <li class="nav-header"><span class="glyphicon glyphicon-th"></span> Ordinateurs <span class="badge">3</span></li>
 
                 <!-- Ordinateur -->
