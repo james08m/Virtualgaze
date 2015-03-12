@@ -25,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="nav.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="nav.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Includes/nav.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.038462" vertical-offset="586" max-vertical-offset="1326">
+            <state vertical-scroll-proportion="0.91052634" vertical-offset="484" max-vertical-offset="1326">
               <caret line="59" column="103" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="103" />
               <folding>
                 <element signature="e#6#88#0#PHP" expanded="true" />
@@ -88,10 +88,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API/Models/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6032316" vertical-offset="769" max-vertical-offset="2159">
+            <state vertical-scroll-proportion="-12.923077" vertical-offset="769" max-vertical-offset="2159">
               <caret line="65" column="64" selection-start-line="65" selection-start-column="64" selection-end-line="65" selection-end-column="64" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
@@ -103,6 +103,18 @@
                 <marker date="1426145731201" expanded="true" signature="1889:1944" placeholder="SELECT COUNT..computer..." />
                 <marker date="1426145731201" expanded="true" signature="1889:1961" placeholder="SELECT COUNT..computers..." />
                 <marker date="1426145731201" expanded="true" signature="2196:2286" placeholder="SELECT COUNT..users..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="carousel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Includes/carousel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.1538461" vertical-offset="2554" max-vertical-offset="3162">
+              <caret line="152" column="160" selection-start-line="152" selection-start-column="160" selection-end-line="152" selection-end-column="160" />
+              <folding>
+                <element signature="e#6#88#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,7 +138,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/Includes/carousel.php" />
         <option value="$PROJECT_DIR$/Includes/nav.php" />
         <option value="$PROJECT_DIR$/member.php" />
         <option value="$PROJECT_DIR$/functions.php" />
@@ -136,6 +147,7 @@
         <option value="$PROJECT_DIR$/API/post.php" />
         <option value="$PROJECT_DIR$/Models/inscription.php" />
         <option value="$PROJECT_DIR$/API/Models/api.php" />
+        <option value="$PROJECT_DIR$/Includes/carousel.php" />
       </list>
     </option>
   </component>
@@ -347,17 +359,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Includes/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.038462" vertical-offset="586" max-vertical-offset="1326">
-          <caret line="59" column="103" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="103" />
-          <folding>
-            <element signature="e#6#88#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#nav#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/member.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.423077" vertical-offset="565" max-vertical-offset="2142">
@@ -419,16 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Includes/carousel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8168761" vertical-offset="2299" max-vertical-offset="3162">
-          <caret line="162" column="94" selection-start-line="162" selection-start-column="94" selection-end-line="162" selection-end-column="94" />
-          <folding>
-            <element signature="e#6#88#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../WorkTrade/WebSite/API/getAvailableEmployee.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="596">
@@ -480,7 +471,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/API/Models/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6032316" vertical-offset="769" max-vertical-offset="2159">
+        <state vertical-scroll-proportion="-12.923077" vertical-offset="769" max-vertical-offset="2159">
           <caret line="65" column="64" selection-start-line="65" selection-start-column="64" selection-end-line="65" selection-end-column="64" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
@@ -492,6 +483,27 @@
             <marker date="1426145731201" expanded="true" signature="1889:1944" placeholder="SELECT COUNT..computer..." />
             <marker date="1426145731201" expanded="true" signature="1889:1961" placeholder="SELECT COUNT..computers..." />
             <marker date="1426145731201" expanded="true" signature="2196:2286" placeholder="SELECT COUNT..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Includes/carousel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1538461" vertical-offset="2554" max-vertical-offset="3162">
+          <caret line="152" column="160" selection-start-line="152" selection-start-column="160" selection-end-line="152" selection-end-column="160" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Includes/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.91052634" vertical-offset="484" max-vertical-offset="1326">
+          <caret line="59" column="103" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="103" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#nav#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

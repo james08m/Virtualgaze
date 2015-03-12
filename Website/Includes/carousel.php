@@ -149,8 +149,8 @@ margin-top: 10px;
             <img src="Images/carousel1.jpg" alt="">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Gardez un oeil</h1>
-                    <p class="lead">Restez au courrant en permanance des activitées des utilisitateurs sur vos appareils en installant Virtualgaze sur ceux-ci</p>
+                    <h1>Restez à l'affût</h1>
+                    <p class="lead">Gardez un oeil en permanance sur les activitées de vos utilisitateurs sur vos appareils en installant Virtualgaze rapidement.</p>
                     <a class="btn btn-large btn-primary" href="#">Inscription</a>
                 </div>
             </div>

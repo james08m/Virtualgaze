@@ -56,13 +56,14 @@
                 <?php // If user connected
                     if(isset($_SESSION['id']))
                     {?>
-
+                        <li><a href="#"><span class="glyphicon glyphicon-cog"></span> <?php echo $_SESSION['username']?></a></li>
+                        <li><a href="deconnexion.php"><span class="glyphicon glyphicon-log-out"></span> Déconnexion</a></li>
                     <?php
                     }
                     else // If no user connected
                     {?>
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Incription</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Connexion</a></li>
                     <?php
                     }
                 ?>
