@@ -7,6 +7,12 @@
  */
 
     session_start();
+
+    if(!isset($_SESSION['id']))
+    {
+        header("Location : inscription.php");
+    }
+    include('Models/functions.php');
 ?>
 
 <!DOCTYPE html>
@@ -35,39 +41,7 @@
 
     <div class="container-fluid">
         <div class="row-fluid">
-            <ul class=" well nav nav-lists col-sm-2" style="border-radius: 0px;">
-                <li class="nav-header"><span class="glyphicon glyphicon-th"></span> Ordinateurs <span class="badge">3</span></li>
-
-                <!-- Ordinateur -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-th-list"></span> Ordinateur 1 <span class="badge">3</span><span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> User1</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> User2</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> User3</a></li>
-                    </ul>
-                </li>
-
-                <!-- Ordinateur -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-th-list"></span> Ordinateur 2 <span class="badge">3</span><span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> User1</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> User2</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> User3</a></li>
-                    </ul>
-                </li>
-
-                <!-- Ordinateur -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-th-list"></span> Ordinateur 3 <span class="badge">3</span><span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> User1</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> User2</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> User3</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <?php include('Includes/sidebar.php');?>
 
 
             <div class="col-sm-10">

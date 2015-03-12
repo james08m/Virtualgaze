@@ -45,6 +45,26 @@ function GetNbUsers($computer_id)
     return (int)$asw['Nb'];
 }
 
+function GetComputers($com_key)
+{
+    global $DB;
+    $req = $DB->prepare('SELECT * FROM computers WHERE com_key = ?');
+    $req->execute(array($com_key));
+    $asw = $req->fetchAll();
+
+    return $asw;
+}
+
+function GetUsers($computer_id)
+{
+    global $DB;
+    $req = $DB->prepare('SELECT * FROM users WHERE computer_id = ?');
+    $req->execute(array($computer_id));
+    $asw = $req->fetchAll();
+
+    return $asw;
+}
+
 
 
 function GetComputerIdByName($name)
@@ -61,10 +81,29 @@ function GetComputerIdByName($name)
 function GetUserIdByName($computer_id, $user)
 {
     global $DB;
-    //Get cumputer id
     $req = $DB->prepare('SELECT id FROM users WHERE computer_id = ? AND username = ?');
     $req->execute(array($computer_id, $user));
     $asw = $req->fetch();
 
     return (int)$asw['id'];
+}
+
+function GetUsernameById($username_id)
+{
+    global $DB;
+    $req = $DB->prepare('SELECT username FROM users WHERE id = ? ');
+    $req->execute(array($username_id));
+    $asw = $req->fetch();
+
+    return $asw['username'];
+}
+
+function GetLog($username_id)
+{
+    global $DB;
+    $req = $DB->prepare('SELECT * FROM logs WHERE username_id = ? ORDER BY id DESC LIMIT 0,1');
+    $req->execute(array($username_id));
+    $asw = $req->fetchAll();
+
+    return $asw;
 }
