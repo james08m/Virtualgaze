@@ -159,9 +159,9 @@ margin-top: 10px;
             <img src="Images/carousel2.jpg" alt="">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Another example headline.</h1>
-                    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <a class="btn btn-large btn-primary" href="#">Learn more</a>
+                    <h1>Plateforme web</h1>
+                    <p class="lead">Connectez-vous ici même avec votre compte pour accèder aux informations de vos ordinateurs en tout temps</p>
+                    <a class="btn btn-large btn-primary" href="#">En savoir plus</a>
                 </div>
             </div>
         </div>

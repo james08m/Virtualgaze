@@ -23,28 +23,49 @@
         <!-- Navbar  main menu -->
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
+                <?php // If user connected
+                if(isset($_SESSION['id']))
+                {?>
 
-                <!-- Menu element 1-->
-                <li class="active"><a href="#">Accueil</a></li>
+                <?php
+                }
+                else // If no user connected
+                {?>
+                    <!-- Menu element 1-->
+                    <li class="active"><a href="#">Accueil</a></li>
+                    <!-- Dropdown menu element 2 -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Page 1-1</a></li>
+                            <li><a href="#">Page 1-2</a></li>
+                            <li><a href="#">Page 1-3</a></li>
+                        </ul>
+                    </li>
 
-                <!-- Dropdown menu element 2 -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Page 1-1</a></li>
-                        <li><a href="#">Page 1-2</a></li>
-                        <li><a href="#">Page 1-3</a></li>
-                    </ul>
-                </li>
+                    <!-- Menu element 3-->
+                    <li><a href="#">À propos</a></li>
 
-                <!-- Menu element 1-->
-                <li><a href="#">À propos</a></li>
+                <?php
+                }
+                ?>
             </ul>
 
             <!-- Navbar  user menu -->
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <?php // If user connected
+                    if(isset($_SESSION['id']))
+                    {?>
+
+                    <?php
+                    }
+                    else // If no user connected
+                    {?>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <?php
+                    }
+                ?>
             </ul>
         </div>
     </div>
