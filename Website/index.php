@@ -33,4 +33,5 @@
 <body>
     <?php include 'Includes/nav.php'; ?>
     <?php include 'Includes/carousel.php'; ?>
+    <?php include 'Includes/features.php'; ?>
 </body>
