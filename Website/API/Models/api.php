@@ -38,6 +38,31 @@ function GetComputerIdByName($name)
     return (int)$asw['id'];
 }
 
+function AddCumputer($member_id, $computer)
+{
+    global $DB;
+
+    // Add computer
+    $req = $DB->prepare('INSERT into computers(member_id, computer, last_ip) VALUES(:member_id, :computer, :last_ip)');
+    $req->execute(array(
+        'member_id' => $member_id,
+        'cumputer' => htmlspecialchars($computer),
+        'last_ip' => GetIp()
+    ));
+}
+
+function AddUser($computer_id, $user)
+{
+    global $DB;
+
+    $req = $DB->prepare('INSERT into users(computer_id, username) VALUES(:computer_id, :username)');
+    $req->execute(array(
+        'computer_id' => $computer_id,
+        'username' => htmlspecialchars($user)
+    ));
+
+
+}
 
 
 function UpdateComputerInfo($computer, $user, $member_id)
@@ -72,31 +97,17 @@ function UpdateComputerInfo($computer, $user, $member_id)
         else // If user not present
         {
 
-            // Add user to computer
-            $req = $DB->prepare('INSERT into users(computer_id, username) VALUES(:computer_id, :username)');
-            $req->execute(array(
-                'computer_id' => GetComputerIdByName($computer),
-                'username' => htmlspecialchars($user)
-            ));
+            // Add user
+            AddUser(GetComputerIdByName($computer), $user);
         }
     }
     else // Computer not present
     {
         // Add computer
-        $req = $DB->prepare('INSERT into computers(member_id, computer, last_ip) VALUES(:member_id, :computer, :last_ip)');
-        $req->execute(array(
-            'member_id' => $member_id,
-            'cumputer' => htmlspecialchars($computer),
-            'last_ip' => GetIp()
-        ));
+        AddCumputer($member_id, $computer);
 
-        // Add user to computer
-        $req = $DB->prepare('INSERT into users(computer_id, username) VALUES(:computer_id, :username)');
-        $req->execute(array(
-            'computer_id' => GetComputerIdByName($computer),
-            'username' => htmlspecialchars($user)
-        ));
-
+        // Add user
+        AddUser(GetComputerIdByName($computer), $user);
     }
 
     $req->closeCursor();
