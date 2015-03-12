@@ -56,8 +56,6 @@ function AddCumputer($com_key, $computer)
     // Add computer
     $req = $DB->prepare('INSERT into computers(com_key, computer, last_ip) VALUES(?, ?, ?)');
     $req->execute(array($com_key, htmlspecialchars($computer), GetIp()));
-
-    echo "Computer added";
 }
 
 function AddUser($computer_id, $user)
@@ -66,8 +64,6 @@ function AddUser($computer_id, $user)
 
     $req = $DB->prepare('INSERT into users(computer_id, username) VALUES(?, ?)');
     $req->execute(array($computer_id, htmlspecialchars($user)));
-
-    echo "User added";
 }
 
 function AddLog($com_key, $computer_id, $user_id, $datas)
@@ -76,7 +72,6 @@ function AddLog($com_key, $computer_id, $user_id, $datas)
 
     $req = $DB->prepare('INSERT INTO logs(com_key, computer_id, username_id, datas, ip) VALUES(?, ?, ?, ?, ?)');
     $req->execute(array(htmlspecialchars($com_key), htmlspecialchars($computer_id), htmlspecialchars($user_id), $datas, GetIp()));
-    echo "information added";
 }
 
 
